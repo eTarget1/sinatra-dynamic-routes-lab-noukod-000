@@ -30,12 +30,12 @@ class App < Sinatra::Base
     # end
 
     get "/say/:number/:phrase" do
-    list_phrase = ' '
+    answer = ' '
 
     params[:number].to_i.times do
-      list_phrase += params[:phrase]
+      answer += params[:phrase]
     end
-    list_phrase
+    answer
   end
 
   #
