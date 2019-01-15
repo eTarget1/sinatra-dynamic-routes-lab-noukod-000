@@ -51,6 +51,8 @@ class App < Sinatra::Base
     case @operation
     when "subtract"
       (@num1-@num2).to_s
+    when "add"
+      
 
   end
 
