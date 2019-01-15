@@ -30,7 +30,7 @@ class App < Sinatra::Base
     # answer
     @num = params[:number].to_i
     @phrase = params[:phrase]
-    @num.times{answer +="#{@phrase}"}
+    @num.times{answer +="#{@phrase}"\n}
     answer
   end
 
