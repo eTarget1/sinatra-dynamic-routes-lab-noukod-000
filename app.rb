@@ -26,3 +26,5 @@ class App < Sinatra::Base
       @w5 = params[:word5]
       erb :saywords
 end
+
+get '/:operation/:number1/:number2'
