@@ -21,14 +21,6 @@ class App < Sinatra::Base
     #   "#{@phrase.reverse}"
     # end
 
-    # get "/say/:number/:phrase" do
-    #   result = ""
-    #   number.to_i.times do |i|
-    #   result += phrase.upcase
-    #   end
-    #   result
-    # end
-
     get "/say/:number/:phrase" do
     answer = ' '
 
