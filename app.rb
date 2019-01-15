@@ -11,10 +11,10 @@ class App < Sinatra::Base
     "#{@name.reverse}"
   end
 
-  # get '/square/:number' do
-  #   @numb = params[:number].to_i
-  #   erb :square
-  # end
+   get '/square/:number' do
+     @numb = params[:number].to_i
+     "#{@numb.square}"
+   end
   #
   #   get '/say/:number/:phrase' do
   #     @number = params[:number].to_i
