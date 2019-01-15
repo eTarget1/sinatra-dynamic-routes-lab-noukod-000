@@ -21,7 +21,7 @@ class App < Sinatra::Base
     #   "#{@phrase.reverse}"
     # end
 
-    get "/say/:number/:phrase" do 
+    get "/say/:number/:phrase" do
     phrase * number.to_i
   end
   #
