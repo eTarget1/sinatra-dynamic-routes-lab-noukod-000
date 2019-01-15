@@ -21,11 +21,13 @@ class App < Sinatra::Base
     #   "#{@phrase.reverse}"
     # end
 
-    get "/say/:number/:phrase" do
-  params[:number].to_i.times do
-    puts params[:phrase]
-  end
-end
+    get "/say/:number/:phrase" do 
+      result = ""
+      number.to_i.times do |i|
+      result += phrase.upcase
+      end
+      result
+    end 
   #
   #   get '/say/:word1/:word2/:word3/:word4/:word5' do
   #     @w1 = params[:word1]
