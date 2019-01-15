@@ -28,6 +28,16 @@ class App < Sinatra::Base
       end
       result
     end
+
+    get "/say/:number/:phrase" do
+    list_phrase = ' '
+
+    params[:number].to_i.times do
+      list_phrase += params[:phrase]
+    end
+    list_phrase
+  end
+
   #
   #   get '/say/:word1/:word2/:word3/:word4/:word5' do
   #     @w1 = params[:word1]
