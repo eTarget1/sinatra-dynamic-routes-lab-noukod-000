@@ -55,7 +55,9 @@ class App < Sinatra::Base
       (@num1 + @num2).to_s
     when "multiply"
       (@num1 * @num2).to_s
-      
+    when "divide"
+      (@num1 / @num2).to_s
+
 
 
   end
