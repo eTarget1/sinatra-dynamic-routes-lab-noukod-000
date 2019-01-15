@@ -9,6 +9,7 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     @numb = params[:number].to_i
+    erb :square
   end
   
 end
